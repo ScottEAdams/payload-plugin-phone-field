@@ -26,10 +26,10 @@ export const phoneIsValid: Validate<any, any, TextField> = (value: string, optio
 	return true
 }
 
-export const phoneField = function(
+export const phoneField = (
 	options: Omit<TextField, 'type'>,
 	phoneOptions?: FeatureProps<any>
-): TextField {
+): TextField => {
 	return {
 		type: 'text',
 		admin: {
