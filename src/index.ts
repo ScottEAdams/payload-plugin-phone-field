@@ -37,7 +37,7 @@ export const phoneField = function(
 				Field: (props) => {
 					return PhoneField({
 						...props,
-						inputProps: { ...phoneOptions }
+						phoneOptions: phoneOptions
 					})
 				}
 			}
