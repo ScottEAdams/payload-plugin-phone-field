@@ -1,6 +1,6 @@
 {
   "name": "payload-plugin-phone-field",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Payload CMS plugin to add a phone number field",
   "author": "Scott Adams <scottadams80@gmail.com>",
   "license": "MIT",
