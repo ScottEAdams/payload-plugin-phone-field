@@ -2,9 +2,10 @@ import { FeatureProps, isPossiblePhoneNumber, isValidPhoneNumber } from 'react-p
 import { TextField, Validate } from 'payload/types'
 
 import PhoneField from './PhoneField'
+import { ValidateOptions } from 'payload/dist/fields/config/types'
 
-export const phoneIsPossible = (value: string, { required }: { required?: boolean }) => {
-	if (required && !value) {
+export const phoneIsPossible: Validate<any, any, TextField> = (value: string, options: ValidateOptions<any, any, any>) => {
+	if (options?.required && !value) {
 		return 'This field is required.'
 	}
 	if (value && !isPossiblePhoneNumber(value)) {
@@ -14,8 +15,8 @@ export const phoneIsPossible = (value: string, { required }: { required?: boolea
 	return true
 }
 
-export const phoneIsValid = (value: string, { required }: { required?: boolean }) => {
-	if (required && !value) {
+export const phoneIsValid: Validate<any, any, TextField> = (value: string, options: ValidateOptions<any, any, any>) => {
+	if (options?.required && !value) {
 		return 'This field is required.'
 	}
 	if (value && !isValidPhoneNumber(value)) {
