@@ -1,0 +1,38 @@
+{
+  "name": "payload-plugin-phone-field",
+  "version": "1.0.0",
+  "description": "Payload CMS plugin to add a phone number field",
+  "author": "Scott Adams <scottadams80@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "payload": "^1.1.18",
+    "react-phone-number-input": "^3.2.12"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottEAdams/payload-plugin-phone-field.git"
+  },
+  "keywords": [
+    "payload",
+    "plugin",
+    "phone",
+    "field"
+  ],
+  "bugs": {
+    "url": "https://github.com/ScottEAdams/payload-plugin-phone-field/issues"
+  },
+  "homepage": "https://github.com/ScottEAdams/payload-plugin-phone-field#readme"
+}

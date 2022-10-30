@@ -1,0 +1,23 @@
+@import '~payload/scss';
+@import 'react-phone-number-input/style.css';
+
+:root {
+  --PhoneInputCountryFlag-height: 2em
+}
+
+.field-type {
+  &.phone {
+    margin-bottom: 1.9230769231rem;
+    position: relative;
+  }
+}
+
+.phone-field {
+  input {
+    @include formInput
+  }
+
+  &.error input {
+    background-color: var(--theme-error-200)
+  }
+}
