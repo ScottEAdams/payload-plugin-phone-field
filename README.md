@@ -2,6 +2,18 @@
 
 Uses [react-phone-number-input](https://www.npmjs.com/package/react-phone-number-input) to add phone number fields to [PayloadCMS](https://payloadcms.com/).
 
+## Installation
+
+```
+yarn add payload-plugin-phone-field
+```
+or
+```
+npm i payload-plugin-phone-field
+```
+
+## Usage
+
 Really straightforward implementation:
 
 ```js
